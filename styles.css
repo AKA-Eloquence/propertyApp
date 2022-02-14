@@ -1,0 +1,360 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue62: hsla(204, 62%, 16%, 1);
+    --blue64: hsla(204, 64%, 16%, 1);
+    --blue67: hsla(204, 67%, 16%, 1);
+    --blueopacity05: hsla(204, 64%, 16%, 0.5);
+    --yellow: hsla(45, 90%, 62%, 1);
+    --light: hsla(220, 100%, 96%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    ;
+}
+
+body {
+    background-color: #E5E5E5;
+    color: var(--blue64);
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* App */
+.app-container {
+    height: 100vh;
+}
+
+.app-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.app {
+    background-color: var(--white);
+    margin: auto;
+    height: 850px;
+    max-width: 400px;
+    min-width: 375px;
+    overflow: hidden;
+}
+
+/* first Div */
+.hero-location {
+    padding: 30px 35px 0;
+}
+
+.hero-location.flex {
+    justify-content: space-between;
+}
+
+.location.flex {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.location p:nth-child(1){
+    color: var(--blueopacity05);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.location p:nth-child(2) {
+    color: var(--blue64);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero-wrapper {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+.hero {
+    background-image: url(Ellipse\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* second div */
+.heading {
+    color: var(--blue64);
+    margin: 15px 0;
+    padding-left: 35px;
+    width: 70%;
+}
+
+.heading h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+/* 3rd Div */
+.slider-wrapper {
+    height: 40px;
+}
+.slider {
+    padding: 0 35px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* for ms */
+    -ms-overflow-style: none;
+}
+
+/* this is for Chrome/Safari/Firefox and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider.flex {
+    height: 100%;
+    flex-direction: column;
+}
+
+.slider.flex ul:nth-child(1) {
+    align-self: flex-start;
+}
+
+.slider li {
+    display: inline-block;
+}
+
+.slider a {
+    background-color: var(--light);
+    border-radius: 10px;
+    color: var(--blue64);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+.slider ul li {
+    margin: 0 4px;
+}
+
+.slider ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+.slider ul li:nth-child(1) a {
+    background-color: var(--blue64);
+    color: var(--white);
+}
+
+/* 4th Div */
+.best {
+    margin: 30px 0 10px;
+    padding: 0 35px;
+}
+
+.best p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+/* 5th Div */
+
+/* sliders */
+.flat-slider-wrapper {
+    padding: 0 35px;
+    height: 312px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: visible;
+    /* for ms */
+    -ms-overflow-style: none;
+}
+
+/* this is for Chrome/Safari/Firefox and Opera */
+.flat-slider-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.flat-slider {
+    background-image: url(Subtract.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 70px right 0;
+    border-radius: 21px;
+    display: inline-block;
+    margin: 0 12px;
+    height: 98%;
+    width: 305px;
+}
+
+.flat-slider:nth-child(1) {
+    margin-left: 0;
+}
+
+.flat-slider:nth-child(3) {
+    margin-right: 0;
+}
+
+.flat-slider-content-wrapper.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.active-slider {
+    display: initial;
+}
+
+.not-active-slider {
+    display: none;
+}
+
+.detail {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.flat-slider-content {
+    background-color: var(--blue67);
+    border-radius: 0 0 21px 21px;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.flat-slider .flat-slider-content p:nth-child(1) {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+.flat-slider .flat-slider-content p:nth-child(2) {
+    color: hsla(0, 0%, 100%, 0.42);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    margin: 3px 0 5px;
+
+}
+
+.slider-content-footer.flex {
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.slider-content-footer .flex {
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.slider-content-footer i {
+    color: var(--yellow);
+    font-size: 20px;
+}
+
+.slider-content-footer p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+
+}
+
+/* ---------------------------------------6th Div */
+
+.nearby {
+    margin: 15px 0 10px;
+    padding: 0 35px;
+}
+
+.nearby h1 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+
+}
+
+/* --------------------------------7th Div */
+.nearby-flats {
+    background-color: var(--light);
+    border-radius: 12px 0 0 12px;
+    margin: 0 35px 45px;
+    height: 100px;
+}
+
+.nearby-flats.flex {
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.nearby-flats-half-left {
+    background-image: url(Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100px;
+}
+
+.nearby-flats-half-right p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.nearby-flats-half-right p:nth-child(2){
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    margin: 5px 0 4px;
+}
+
+.nearby-flats-haf-right-content.flex {
+    gap: 10px;
+}
+
+.nearby-flats-haf-right-content .flex {
+    gap: 5px;
+}
+
+.nearby-flats-haf-right-content .flex p{
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: -0.03em;
+}
+
+.nearby-flats-haf-right-content .flex i {
+    color: var(--yellow);
+}
+
+/*--------------------------------------- 8th div */
+.footer {
+    background-color: var(--blue64);
+    height: 100vh;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
