@@ -239,7 +239,7 @@ ul {
 .flat3 {
     background-image: url(flat3.jpg);
 }
-
+/* -------Banglow */
 .banglow1 {
     background-image: url(banglow1.jpg);
 }
@@ -248,6 +248,23 @@ ul {
 }
 .banglow3 {
     background-image: url(banglow3.jpg);
+}
+/* ----------Nearby images */
+.nearby1 {
+    background-image: url(nearby1.jpg);
+    border-radius: 12px 0 0 12px;
+}
+.nearby2 {
+    background-image: url(nearby2.jpg);
+    border-radius: 12px 0 0 12px;
+}
+.nearby3 {
+    background-image: url(nearby3.jpg);
+    border-radius: 12px 0 0 12px;
+}
+.nearby4 {
+    background-image: url(nearby4.jpg);
+    border-radius: 12px 0 0 12px;
 }
 
 
@@ -331,10 +348,22 @@ ul {
 }
 
 /* --------------------------------7th Div */
+.nearby-container {
+    height: 100px;
+    margin: 10px 35px 45px;
+}
+
+.nearby-slider {
+    height: 100%;
+}
+
+
+.nearby-container .active-slider {
+    display: initial;
+}
 .nearby-flats {
     background-color: var(--light);
     border-radius: 12px 0 0 12px;
-    margin: 0 35px 45px;
     height: 100px;
 }
 
@@ -344,7 +373,7 @@ ul {
 }
 
 .nearby-flats-half-left {
-    background-image: url(Rectangle\ 9.png);
+    /* background-image: url(Rectangle\ 9.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
