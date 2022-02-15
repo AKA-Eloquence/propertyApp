@@ -138,12 +138,20 @@ ul {
 }
 
 .slider a {
-    background-color: var(--light);
     border-radius: 10px;
-    color: var(--blue64);
     font-size: 16px;
     font-weight: 400;
     padding: 10px 20px;
+}
+
+.property-type {
+    background-color: var(--light);
+    color: var(--blue64);
+}
+
+.active-property-type {
+    background-color: var(--blue64);
+    color: var(--white);
 }
 
 .slider ul li {
@@ -152,11 +160,6 @@ ul {
 
 .slider ul li:nth-child(1) {
     margin-left: 0;
-}
-
-.slider ul li:nth-child(1) a {
-    background-color: var(--blue64);
-    color: var(--white);
 }
 
 /* 4th Div */
@@ -171,11 +174,16 @@ ul {
     letter-spacing: -0.03em;
 }
 /* 5th Div */
-
-/* sliders */
-.flat-slider-wrapper {
-    padding: 0 35px;
+.slider-container {
     height: 312px;
+}
+
+.second-slider {
+    height: 312px;
+    display: flex;
+    column-gap: 40px;
+    padding: 0 35px;
+    
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: visible;
@@ -184,31 +192,77 @@ ul {
 }
 
 /* this is for Chrome/Safari/Firefox and Opera */
-.flat-slider-wrapper::-webkit-scrollbar {
+.second-slider::-webkit-scrollbar {
     display: none;
 }
 
-.flat-slider {
+/* ----Active Slider not active slider */
+.active-slider {
+    display: flex;
+}
+
+.not-active-slider {
+    display: none;
+}
+
+/*------------------------------ images */
+/* ---Homes */
+.home1 {
     background-image: url(Subtract.png);
+}
+.home2 {
+    background-image: url(home2.jpg);
+}
+
+.home3 {
+    background-image: url(home3.jpg);
+}
+/* --------------------Apartment */
+.apartment1 {
+    background-image: url(apartment1.jpg);
+}
+.apartment2 {
+    background-image: url(apartment2.jpg);
+}
+
+.apartment3 {
+    background-image: url(apartment3.jpg);
+}
+
+/* --------------------Flat */
+.flat1 {
+    background-image: url(flat1.jpg);
+}
+.flat2 {
+    background-image: url(flat2.jpg);
+}
+.flat3 {
+    background-image: url(flat3.jpg);
+}
+
+.banglow1 {
+    background-image: url(banglow1.jpg);
+}
+.banglow2 {
+    background-image: url(banglow2.jpg);
+}
+.banglow3 {
+    background-image: url(banglow3.jpg);
+}
+
+
+
+
+.item {
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom 70px right 0;
+    background-size: 100% 70%;
+    /* background-size: contain; */
     border-radius: 21px;
-    display: inline-block;
-    margin: 0 12px;
     height: 98%;
     width: 305px;
 }
 
-.flat-slider:nth-child(1) {
-    margin-left: 0;
-}
-
-.flat-slider:nth-child(3) {
-    margin-right: 0;
-}
-
-.flat-slider-content-wrapper.flex{
+.item-child {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -216,62 +270,46 @@ ul {
     position: relative;
 }
 
-.active-slider {
-    display: initial;
-}
-
-.not-active-slider {
-    display: none;
-}
-
-.detail {
-    position: absolute;
-    height: 68%;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.flat-slider-content {
+.item-grandChild {
     background-color: var(--blue67);
     border-radius: 0 0 21px 21px;
     padding: 15px 20px;
     width: 100%;
 }
 
-.flat-slider .flat-slider-content p:nth-child(1) {
+.item .item-child p:nth-child(1) {
     color: var(--white);
     font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
-.flat-slider .flat-slider-content p:nth-child(2) {
+.item .item-child p:nth-child(2) {
     color: hsla(0, 0%, 100%, 0.42);
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: -0.03em;
     margin: 3px 0 5px;
-
 }
 
-.slider-content-footer.flex {
+.item-footer.flex {
     justify-content: flex-start;
     gap: 12px;
 }
 
-.slider-content-footer .flex {
+.item-footer .flex {
     align-items: flex-start;
     gap: 8px;
 }
 
-.slider-content-footer i {
+.item-footer i {
     color: var(--yellow);
     font-size: 20px;
 }
 
-.slider-content-footer p {
+.item-footer p {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: -0.03em;
