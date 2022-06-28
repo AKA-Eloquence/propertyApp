@@ -1,2 +1,2 @@
 # propertyApp not API
-https://aka-eloquence.github.io/propertyAppDesign/
+https://eloquence98.github.io/propertyAppDesign/
